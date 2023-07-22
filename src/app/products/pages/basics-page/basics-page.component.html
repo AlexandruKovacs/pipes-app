@@ -1,0 +1,23 @@
+<p-panel header="Pipes básicos" class="p-1">
+  <p>
+    Pipes básicos de Angular
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="titlecase">
+      {{ nameComplete | titlecase }}
+    </p-card>
+  </div>
+</div>
