@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class UncommonPageComponent {
 
+  // i18nSelect
+  public name: string = 'Alex';
+  public genre: 'male' | 'female' = 'male';
+
 }

@@ -7,6 +7,15 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 
+// Configuración del locale de la app
+import localeEs from '@angular/common/locales/es';
+import localeFr from '@angular/common/locales/fr';
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEs);
+registerLocaleData(localeFr);
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +27,9 @@ import { SharedModule } from './shared/shared.module';
 
     SharedModule,
   ],
-  providers: [],
+  providers: [
+    { provide: 'LOCALE_ID', useValue: 'es' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
