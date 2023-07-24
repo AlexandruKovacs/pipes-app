@@ -39,8 +39,9 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Mayúsculas',
+            label: 'Custom Pipes',
             icon: 'pi pi-sort-alt',
+            routerLink: '/custom'
           },
         ]
       }
